@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindvalley Events Email Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .card-icon.purple {
+            background: linear-gradient(135deg, #8B5CF6 0%, #6B4C9A 100%);
+        }
+
+        .card-icon.cyan {
+            background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+        }
+
+        .card-icon.pink {
+            background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #a0a0a0;
+            line-height: 1.6;
+        }
+
+        .card .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.email {
+            background: rgba(139, 92, 246, 0.2);
+            color: #A78BFA;
+        }
+
+        .badge.external {
+            background: rgba(236, 72, 153, 0.2);
+            color: #F472B6;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #8B5CF6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mindvalley Events Campaign</h1>
+            <p>Email templates for community event invitations</p>
+        </div>
+
+        <div class="cards">
+            <a href="email-1-mission.html" class="card">
+                <div class="card-icon purple">📧</div>
+                <h2>Email 1: Mission-Driven</h2>
+                <p>Philosophical, story-driven email about the power of community and why events matter. Warms up the audience with Vishen's personal perspective.</p>
+                <span class="badge email">Email Template</span>
+            </a>
+
+            <a href="email-2-offer.html" class="card">
+                <div class="card-icon cyan">🎯</div>
+                <h2>Email 2: Direct Offer</h2>
+                <p>Straight to the point with all event options: Free Summits, Mindvalley U (Tallinn), and FutureHuman (Dubai). Designed to convert.</p>
+                <span class="badge email">Email Template</span>
+            </a>
+
+            <a href="https://www.mindvalley.com/events" target="_blank" class="card">
+                <div class="card-icon pink">🌐</div>
+                <h2>Events Page</h2>
+                <p>The official Mindvalley events page where all CTAs lead. View all upcoming summits, Mindvalley U, FutureHuman, and more.</p>
+                <span class="badge external">External Link</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Created for Mindvalley Marketing Team</p>
+        </div>
+    </div>
+</body>
+</html>
